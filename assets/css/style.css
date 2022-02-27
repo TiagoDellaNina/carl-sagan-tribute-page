@@ -1,0 +1,663 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: roboto, arial;
+    color:#aaa;
+
+}
+
+p {
+    font-family: ubuntu, roboto, arial;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #111;
+    width:100%;
+}
+
+#banner {
+
+    background-image:url('../img/Banner.jpg') ;
+    background-position:right;
+    background-size: cover;
+    height:660px;
+    display:flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+}
+
+
+
+header h1 {
+    color:white;
+    border:solid 2px white;
+    padding:10px;
+    border-radius: 10px;
+    margin-left: 25px;
+
+
+}
+
+ul {
+    padding: 20px;
+    display: flex;
+}
+
+ul, li {
+    list-style: none;
+}
+
+li {
+    color:white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    margin:10px;
+    padding: 10px;
+}
+
+
+#banner_text {
+    padding-left: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#banner_text h1 {
+    text-shadow:1px 3px 9px black;
+    font-weight: 700;
+    color:white;
+    font-size: 45px;
+    letter-spacing: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+
+#banner_text p {
+    font-family: roboto, ubuntu, arial;
+    padding-top:5px ;
+    text-shadow:1px 1px 2px black;
+    color:white;
+    font-size: 22px;
+    text-align:justify;
+    width: 410px;
+    font-weight:300;
+}
+
+p {
+    text-align: justify;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.img_text {
+    background-image: url('../img/Carl-Sagan-page.jpg');
+    background-position:right ;
+    background-size: cover;
+    height:300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 80px;
+    
+}
+
+.img_text p {
+    padding: 15px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.308);
+    color:white;
+    font-weight: 400;
+    width:400px;
+    text-shadow: 1px 2px 2px black;
+    text-align: justify;
+
+}
+
+
+.quote_content1,
+.quote_content2,
+.quote_content3,
+.quote_content4,
+.quote_content5 {
+
+
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    margin-bottom:20px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+    transition: .4s;
+}
+
+.quote_content1:hover,
+.quote_content2:hover,
+.quote_content3:hover,
+.quote_content4:hover,
+.quote_content5:hover,
+.quote_content6:hover {
+    -webkit-filter: none;	
+	filter: none;
+
+}
+
+
+
+h2,
+#quotes p {
+    color:white;
+    text-shadow: -2px 2px 3px black;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(0, 0, 0, 0.336);
+    
+
+
+}
+
+h2 {
+    padding-top:20px;
+    padding-bottom: 10px;
+    font-family: ubuntu, arial;
+    font-size:20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#quotes p {
+    padding-bottom: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+
+.quote_content1 {
+    background-image: url('../img/galaxy2.jpg');
+}
+
+.quote_content2 {
+    background-image: url('../img/blackhole1.jpg');
+}
+
+.quote_content3 {
+    background-image: url('../img/blackhole2.png');
+}
+
+.quote_content4 {
+    background-image: url('../img/supernova1.jpg');
+}
+
+.quote_content5 {
+    background-image: url('../img/4thdimension1.jpg');
+}
+
+
+
+#page_content,
+#quotes {
+    width: 990px;
+}
+#video h1,
+#quotes h1,
+#page_content h1,
+#books_menu h1 {
+    color:white;
+    margin-top: 40px;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.562);
+    border-radius: 10px;
+    font-family: ubuntu, arial;
+}
+
+
+
+.main_text {
+    margin-top:20px;
+    display:flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.308);
+    border-radius: 10px;
+
+}
+
+.main_text img {
+    margin-left:20px;
+    width:495.1px;
+    height:418px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+#books {
+    display: flex;
+    overflow: hidden;
+    overflow-x: scroll;
+    width:990px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.247);
+    margin-bottom: 30px;
+}
+
+#books::-webkit-scrollbar {
+    border-radius:10px;
+    background-color: rgba(0, 0, 0, 0.562);
+    border:solid 1px rgb(29, 29, 29);
+}
+
+#books::-webkit-scrollbar-thumb {
+    display:block;
+    background-image:url('../img/scroll.jpg');
+    background-position:right ;
+    background-size: cover;
+    border-radius:10px;
+    border:solid 1px rgb(29, 29, 29);
+}
+
+#books img {
+    width:200px;
+    height:300px;
+    margin: 30px;
+    margin-left:0;
+    margin-right:20px;
+    margin-left:20px;
+    border-radius: 10px;
+    box-shadow: 7px 5px 5px black;
+}
+
+
+#video {
+    width: 990px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#video h1 {
+    width: 990px;
+}
+
+iframe {
+    border-radius: 10px;
+}
+
+
+@media (min-width: 712px) and (max-width: 1025px) { 
+    .main_text {
+        align-items: unset;
+    }
+
+    .main_text img {
+        margin-top: 110px;
+        width: 394px;
+        height:406px;
+    }
+
+    .teste {
+        position: absolute;
+        width: 660px;
+    }
+
+    .teste2 p{
+        padding-top: 105px;
+    }
+}
+
+
+@media (max-width:1025px) {
+
+    #banner_text {
+        padding-left:20%;
+    }
+
+    
+    #page_content,
+    #quotes {
+        width: 700px;
+    }
+
+    .img_text {
+        padding-left: 40px;
+    }
+
+    #books {
+        width:700px;
+    }
+
+    #video {
+        width: 700px;
+
+    }
+
+    #video h1 {
+        width: 700px;
+    }
+
+    iframe {
+        width: 700px;
+        height: 395.75px;
+    }
+
+
+}
+
+
+
+.menuMobile {
+    display:none;
+    height: 50px;
+    width:50px;
+    margin-right: 25px;
+
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.mm_line {
+    height:3px;
+    width: 100%;
+    background-color: white;
+}
+
+@media (min-width:901px) {
+    li:hover {
+        color: rgb(124, 124, 124);
+        background-color: rgba(0, 0, 0, 0.308);
+        border-radius: 7px;
+        text-shadow: 0px 0px 1px black;
+        transition: 400ms all;
+    }
+    
+    
+}
+
+@media (max-width:900px) {
+
+    .quote_content1,
+    .quote_content2,
+    .quote_content3,
+    .quote_content4,
+    .quote_content5,
+    .quote_content6 {
+    -webkit-filter: none;	
+	filter: none;
+
+    }
+
+
+
+    #banner {
+        height:300px;
+    }
+
+    #banner_text h1 {
+        display:none;
+    }
+
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header {
+        flex-direction: column;
+        height:150px;
+    }
+    header h1 {
+        width: fit-content;
+    }
+    
+    .header_top {
+        padding-top: 25px;
+        width: 100%;
+        display: flex;
+        justify-content:space-between; 
+    }
+
+    ul {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        display: none;
+        position: relative;
+        width: 700px;
+        background-image: url('../img/gs3CZfP8Sq7TwUEGLqU7buBa6lU.jpg');
+        background-position:center ;
+        background-size: cover;
+        border-radius: 10px;
+    }
+
+    ul a {
+        text-align: center;
+    }
+    
+    li {
+        text-shadow:0px 1px 3px black;
+        margin: 0;
+    }
+    
+}
+
+
+@media (max-width:711px) {
+    
+    ul {
+        width:410px;
+    }
+
+    #banner_text {
+        padding-left:0;
+        align-items: center;
+    }
+    
+    #banner_text p {
+        width: 365px;
+    }
+
+    #page_content,
+    #quotes {
+        width: 410px;
+    }
+
+    #quotes p {
+        font-weight: 300;
+    }
+    
+    #books {
+        width:410px;
+    }
+
+    #video {
+        width: 410px;
+    }
+
+    #video h1 {
+        width: 410px;
+    }
+
+    iframe {
+        width: 410px;
+        height: 230.625px;
+    }
+
+    .img_text {
+        padding-left: 0;
+        justify-content: center;
+        align-items: end;
+
+    }
+
+    .img_text p {
+        width: 370px;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+
+    .main_text img {
+        width:370px;
+        height:370px;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .main_text {
+        display:flex;
+        flex-direction: column-reverse;
+    
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    #video h1, 
+    #quotes h1, 
+    #page_content h1, 
+    #books_menu h1 {
+        font-size:20px;
+    }
+
+
+}
+
+@media (max-width:427px) {
+
+    ul {
+        width:350px;
+    }
+
+    #banner_text {
+        padding-left:0;
+    }
+
+    #banner_text p {
+        font-size: 19.8px;
+    }
+
+    #page_content,
+    #quotes {
+        width: 350px;
+    }
+
+    .img_text p {
+        width: 310px;
+    }
+
+    #books {
+        width:350px;
+    }
+
+    #video {
+        width: 350px;
+    }
+
+    #video h1 {
+        width: 350px;
+    }
+
+    iframe {
+        width: 350px;
+        height: 196.875px;
+    }
+
+
+    .main_text img {
+        width:310px;
+        height:310px;
+        margin-bottom: 15px;
+    }
+
+
+
+
+ 
+}
+
+
+@media (max-width:398px) {
+
+    ul {
+        width:300px;
+    }
+
+    #banner {
+        height:250px;
+    }
+
+    #banner_text p{
+        font-size:15px;
+        width:289px;
+        font-weight: 400;
+    }
+
+    #page_content,
+    #quotes {
+        width: 300px;
+    }
+
+    #books {
+        width:300px;
+    }
+
+    #video {
+        width: 300px;
+    }
+
+    #video h1 {
+        width: 300px;
+    }
+
+    iframe {
+        width: 300px;
+        height: 168.75px;
+    }
+
+
+    .main_text img {
+        width:260px;
+        height:260px;
+    }
+
+    .img_text p {
+        width: 260px;
+    }
+
+    li {
+        padding:5px;
+    }
+
+}
